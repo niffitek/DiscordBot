@@ -3,9 +3,6 @@ import asyncio
 from discord.ext import commands
 from datetime import datetime
 
-# id = 525342468086956057
-# channel = 770963080796176394
-
 client = discord.Client()
 # bot = commands.Bot
 
@@ -26,9 +23,7 @@ async def time_check():
     while True:
         now = datetime.strftime(datetime.now(), '%H:%M')
         if now == '15j:00':
-            message = await message_channel.send("@everyone Wer ist heute Abend bei Among us ab 20:30 dabei?")
-            # emoji = client.get_emoji(✅)
-            # await message.add_reaction(\N {White Heavy Check Mark})
+            message = await message_channel.send("")
             time = 90
         else:
             time = 1
@@ -36,7 +31,7 @@ async def time_check():
 
 # client.loop.create_task(time_check())
 
-client.run('NzcyMTYxNzExOTU2MDMzNTM2.X52pog.kvOHU5ZAId60xSPgU1QFYunSwqk')
+client.run('')
 
 
 # import discord,random,asyncio,os
